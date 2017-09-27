@@ -24,13 +24,25 @@ public class Main {
 	
 	public static void CalculateRomanNumeral(String input)
 	{
+		
+		try { 
+	        Integer.parseInt(input); 
+	    } catch(NumberFormatException e) { 
+	    	System.out.println("Please enter a valid number");
+	        return; 
+	    } catch(NullPointerException e) {
+	    	System.out.println("Please enter a valid number");
+	        return;
+	    }
+		
+			
+		
 		//TODO: How to error check against an empty input 
 		if(input.length() < 1)
 		{
 		System.out.println("Please input a number larger than 0");
 		return;
-		}
-		if(Integer.parseInt(input) > 6000)
+		}else if(Integer.parseInt(input) > 6000)
 		{
 			System.out.println("No known conversion for numbers greater than 6000");
 			return;
