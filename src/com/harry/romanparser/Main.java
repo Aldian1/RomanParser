@@ -27,19 +27,19 @@ public class Main {
 		extractNumericalUnits(inputtedNumber);
 	}
 
-	private static void extractNumericalUnits(Integer inputtedNumber) {
+	private static void extractNumericalUnits(int inputtedNumber) {
 		int units = 0;
 		int tens = 0;
 		int hundreds = 0;
 		int thousands = 0;
-		if (inputtedNumber < 10) {
+		if (inputtedNumber <= 9) {
 			units = inputtedNumber;
 		}
-		if (inputtedNumber >= 10 & inputtedNumber < 100) {
+		if ((inputtedNumber >= 10) & inputtedNumber < 100) {
 			tens = ((inputtedNumber - hundreds) / 10) * 10;
 			units = (inputtedNumber - hundreds) - (tens);
 		}
-		if (inputtedNumber >= 100 & inputtedNumber < 1000) {
+		if ((inputtedNumber >= 100) & inputtedNumber < 1000) {
 			hundreds = (inputtedNumber / 100) * 100;
 			tens = ((inputtedNumber - hundreds) / 10) * 10;
 			units = (inputtedNumber - hundreds) - (tens);
