@@ -12,6 +12,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
@@ -32,7 +33,7 @@ public class Main {
     }
 
     private void calculateRomanNumeral(String input) {
-        captureTime();
+       
         Integer inputtedNumber = readAndVerifyUserInput(input);
         extractNumericalUnits(inputtedNumber);
     }
@@ -79,9 +80,8 @@ public class Main {
         System.out.println("Tens: " + tens);
         System.out.println("Hundreds: " + hundreds);
         System.out.println("Thousands: " + thousands);
-        System.out.println("Time to calculate: " + (float)captureTime() + " milliseconds");
+        System.out.println("Time to calculate: " + captureTime() + " milliseconds");
         askUserToStartAgain(userInput("Try another?: Y/N "));
-
     }
 
     private void askUserToStartAgain(String input) {
@@ -95,20 +95,20 @@ public class Main {
     private Integer readAndVerifyUserInput(String input) {
         try {
             Integer inputtedNumber = Integer.parseInt(input);
-            if (input.length() < 1) {
-                throw new RuntimeException("Please input a number larger than 0");
-            } else if (inputtedNumber >= 6000) {
+            if (input.length() < 1 || inputtedNumber >= 6000) {
+                System.out.println("Invalid Number");
                 askUserToStartAgain(userInput("Try another?: Y/N "));
-                throw new RuntimeException("No known conversion for numbers greater than 6000");
+
             }
             return inputtedNumber;
         } catch (NumberFormatException e) {
-            throw new RuntimeException("Please enter a valid number");
+            System.out.println("Invalid Number");
+            askUserToStartAgain(userInput("Try another?: Y/N "));
         } catch (NullPointerException e) {
-            throw new RuntimeException("Please enter a valid number");
-
+            System.out.println("Invalid Number");
+            askUserToStartAgain(userInput("Try another?: Y/N "));
         }
-
+        return 0;
     }
 
     private String userInput(String instructions) {
@@ -151,7 +151,8 @@ public class Main {
     }
 
     private long captureTime(){
-        return System.currentTimeMillis() - timeCapture;
+        timeCapture = System.currentTimeMillis() - timeCapture;
+        return timeCapture;
     }
 
 }

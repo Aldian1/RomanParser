@@ -23,14 +23,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="-1493">
+              <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#5682#5683#0" expanded="true" />
-                <element signature="e#5745#5746#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,6 +39,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>\/\/\n\/\/ Source code recreated from a \.class file by IntelliJ IDEA\n\/\/ \(powered by Fernflower decompiler\)\n\/\/\n\npackage com\.harry\.romanparser\;\n\nimport java\.io\.BufferedReader\;\nimport java\.io\.FileNotFoundException\;\nimport java\.io\.FileReader\;\nimport java\.io\.IOException\;\nimport java\.io\.InputStreamReader\;\nimport org\.json\.simple\.JSONArray\;\nimport org\.json\.simple\.JSONObject\;\nimport org\.json\.simple\.parser\.JSONParser\;\nimport org\.json\.simple\.parser\.ParseException\;\n\npublic class Main \{\n    public Main\(\) \{\n    \}\n\n    public static void main\(String\[\] args\) \{\n        try \{\n            calculateRomanNumeral\(userInput\(\&quot;Enter a number\: \&quot;\)\)\;\n        \} catch \(Exception var2\) \{\n            System\.out\.println\(var2\.getMessage\(\)\)\;\n        \}\n\n    \}\n\n    public static void calculateRomanNumeral\(String input\) \{\n        Integer inputtedNumber \= readAndVerifyUserInput\(input\)\;\n        extractNumericalUnits\(inputtedNumber\)\;\n    \}\n\n    private static void extractNumericalUnits\(Integer inputtedNumber\) \{\n        int units \= 0\;\n        int tens \= 0\;\n        int hundreds \= 0\;\n        int thousands \= 0\;\n        if \(inputtedNumber\.intValue\(\) \&lt; 10\) \{\n            units \= inputtedNumber\.intValue\(\)\;\n        \}\n\n        if \(inputtedNumber\.intValue\(\) \&gt;\= 10 \&amp; inputtedNumber\.intValue\(\) \&lt; 100\) \{\n            tens \= \(inputtedNumber\.intValue\(\) \- hundreds\) \/ 10 \* 10\;\n            units \= inputtedNumber\.intValue\(\) \- hundreds \- tens\;\n        \}\n\n        if \(inputtedNumber\.intValue\(\) \&gt;\= 100 \&amp; inputtedNumber\.intValue\(\) \&lt; 1000\) \{\n            hundreds \= inputtedNumber\.intValue\(\) \/ 100 \* 100\;\n            tens \= \(inputtedNumber\.intValue\(\) \- hundreds\) \/ 10 \* 10\;\n            units \= inputtedNumber\.intValue\(\) \- hundreds \- tens\;\n        \}\n\n        if \(inputtedNumber\.intValue\(\) \&gt;\= 1000\) \{\n            thousands \= inputtedNumber\.intValue\(\) \/ 1000 \* 1000\;\n            hundreds \= \(inputtedNumber\.intValue\(\) \- thousands\) \/ 100 \* 100\;\n            tens \= \(inputtedNumber\.intValue\(\) \- thousands \- hundreds\) \/ 10 \* 10\;\n            units \= inputtedNumber\.intValue\(\) \- thousands \- hundreds \- tens\;\n        \}\n\n        printResults\(units\, tens\, hundreds\, thousands\)\;\n    \}\n\n    private static void printResults\(Integer units\, Integer tens\, Integer hundreds\, Integer thousands\) \{\n        JSONObject romanNumeralRef \= getJsonObject\(\&quot;assets\/reference\.json\&quot;\)\;\n        JSONArray romanNumeralUnits \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Units\&quot;\)\;\n        JSONArray romanNumeralTens \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Tens\&quot;\)\;\n        JSONArray romanNumeralHundreds \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Hundreds\&quot;\)\;\n        JSONArray romanNumeralThousands \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Thousands\&quot;\)\;\n        String unitsResult \= searchJSONArray\(units\, romanNumeralUnits\)\;\n        String tensResult \= searchJSONArray\(tens\, romanNumeralTens\)\;\n        String hundredsResult \= searchJSONArray\(hundreds\, romanNumeralHundreds\)\;\n        String thousandsResult \= searchJSONArray\(thousands\, romanNumeralThousands\)\;\n        System\.out\.println\(\&quot;Roman Numeral Equivalent\: \&quot; \+ thousandsResult \+ hundredsResult \+ tensResult \+ unitsResult\)\;\n        System\.out\.println\(\&quot;Units\: \&quot; \+ units\)\;\n        System\.out\.println\(\&quot;Tens\: \&quot; \+ tens\)\;\n        System\.out\.println\(\&quot;Hundreds\: \&quot; \+ hundreds\)\;\n        System\.out\.println\(\&quot;Thousands\: \&quot; \+ thousands\)\;\n        askUserToStartAgain\(userInput\(\&quot;Try another\?\: Y\/N \&quot;\)\)\;\n    \}\n\n    private static void askUserToStartAgain\(String input\) \{\n        if \(\&quot;y\&quot;\.equals\(input\) \|\| \&quot;Y\&quot;\.equals\(input\)\) \{\n            main\(\(String\[\]\)null\)\;\n        \}\n    \}\n\n    private static Integer readAndVerifyUserInput\(String input\) \{\n        try \{\n            Integer inputtedNumber \= Integer\.parseInt\(input\)\;\n            if \(input\.length\(\) \&lt; 1\) \{\n                throw new RuntimeException\(\&quot;Please input a number larger than 0\&quot;\)\;\n            \} else if \(inputtedNumber\.intValue\(\) \&gt;\= 6000\) \{\n                askUserToStartAgain\(userInput\(\&quot;Try another\?\: Y\/N \&quot;\)\)\;\n                throw new RuntimeException\(\&quot;No known conversion for numbers greater than 6000\&quot;\)\;\n            \} else \{\n                return inputtedNumber\;\n            \}\n        \} catch \(NumberFormatException var2\) \{\n            throw new RuntimeException\(\&quot;Please enter a valid number\&quot;\)\;\n        \} catch \(NullPointerException var3\) \{\n            throw new RuntimeException\(\&quot;Please enter a valid number\&quot;\)\;\n        \}\n    \}\n\n    public static String userInput\(String instructions\) \{\n        System\.out\.println\(instructions\)\;\n        BufferedReader bufferedReader \= new BufferedReader\(new InputStreamReader\(System\.in\)\)\;\n        String input \= null\;\n\n        try \{\n            input \= bufferedReader\.readLine\(\)\;\n        \} catch \(IOException var4\) \{\n            var4\.printStackTrace\(\)\;\n        \}\n\n        return input\;\n    \}\n\n    public static String searchJSONArray\(Integer key\, JSONArray arrayToSearch\) \{\n        for\(int i \= 0\; i \&lt; arrayToSearch\.size\(\)\; \+\+i\) \{\n            JSONObject item \= \(JSONObject\)arrayToSearch\.get\(i\)\;\n            Integer convertedResult \= Integer\.parseInt\(\(String\)item\.get\(\&quot;key\&quot;\)\)\;\n            if \(key\.equals\(convertedResult\)\) \{\n                return \(String\)item\.get\(\&quot;val\&quot;\)\;\n            \}\n        \}\n\n        return \&quot;\=\=\=\=\=\= Cannot find key \[\&quot; \+ key \+ \&quot;\] in \&quot; \+ arrayToSearch \+ \&quot; \=\=\=\=\=\=  \&quot;\;\n    \}\n\n    public static JSONObject getJsonObject\(String path\) \{\n        JSONParser parser \= new JSONParser\(\)\;\n\n        try \{\n            Object obj \= \(JSONObject\)parser\.parse\(new FileReader\(path\)\)\;\n            JSONObject jsonObject \= \(JSONObject\)obj\;\n            return jsonObject\;\n        \} catch \(FileNotFoundException var4\) \{\n            var4\.printStackTrace\(\)\;\n        \} catch \(IOException var5\) \{\n            var5\.printStackTrace\(\)\;\n        \} catch \(ParseException var6\) \{\n            var6\.printStackTrace\(\)\;\n        \}\n\n        return null\;\n    \}\n\}\n</find>
+      <find>timeCapture</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -121,7 +120,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,15 +209,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="723" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19685039" sideWeight="0.42109376" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19554849" sideWeight="0.390625" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19212599" sideWeight="0.52421874" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19395867" sideWeight="0.54296875" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19212599" sideWeight="0.47578126" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19395867" sideWeight="0.45703125" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16692914" sideWeight="0.496875" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15859374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -319,14 +318,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="-1493">
+          <caret line="35" column="7" lean-forward="false" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#5682#5683#0" expanded="true" />
-            <element signature="e#5745#5746#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -395,6 +392,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
