@@ -6,13 +6,32 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import java.util.concurrent.TimeUnit;
+
+
+
+class UnitsObject {
+
+    private int units=0;
+    private int tens=0;
+    private int hundreds=0;
+    private int thousands=0;
+
+         public UnitsObject(int a, int b, int c, int d)
+         {
+         units = a;
+         tens = b;
+         hundreds = c;
+         thousands = d;
+         }
+}
 
 public class Main {
 
@@ -29,20 +48,24 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     private void calculateRomanNumeral(String input) {
-       
+
         Integer inputtedNumber = readAndVerifyUserInput(input);
         extractNumericalUnits(inputtedNumber);
+        getJSONReferencesAndConvert();
+        printResults();
+        checkUserYesNoAnwser(userInput("Try another?: Y/N "));
     }
 
     private void extractNumericalUnits(int inputtedNumber) {
+        //takes inputted number and returns and OBJ
         int units = 0;
-        int tens = 0;
+        int tens =0;
         int hundreds = 0;
         int thousands = 0;
+
         if (inputtedNumber <= 9) {
             units = inputtedNumber;
         }
@@ -61,11 +84,15 @@ public class Main {
             tens = ((inputtedNumber - thousands - hundreds) / 10) * 10;
             units = ((inputtedNumber - thousands) - hundreds) - tens;
         }
-        printResults(units, tens, hundreds, thousands);
+
+
     }
 
-    private void printResults(Integer units, Integer tens, Integer hundreds, Integer thousands) {
-
+    private void getJSONReferencesAndConvert() {
+        int units = 0;
+        int tens = 0;
+        int hundreds = 0;
+        int thousands = 0;
         JSONObject romanNumeralRef = getJsonObject("assets/reference.json");
         JSONArray romanNumeralUnits = (JSONArray) romanNumeralRef.get("Units");
         JSONArray romanNumeralTens = (JSONArray) romanNumeralRef.get("Tens");
@@ -75,21 +102,28 @@ public class Main {
         String tensResult = searchJSONArray(tens, romanNumeralTens);
         String hundredsResult = searchJSONArray(hundreds, romanNumeralHundreds);
         String thousandsResult = searchJSONArray(thousands, romanNumeralThousands);
-        System.out.println("Roman Numeral Equivalent: " + thousandsResult + hundredsResult + tensResult + unitsResult);
-        System.out.println("Units: " + units);
-        System.out.println("Tens: " + tens);
-        System.out.println("Hundreds: " + hundreds);
-        System.out.println("Thousands: " + thousands);
-        System.out.println("Time to calculate: " + captureTime() + " milliseconds");
-        askUserToStartAgain(userInput("Try another?: Y/N "));
+        return;
     }
 
-    private void askUserToStartAgain(String input) {
+    private void printResults() {
+        System.out.println("Roman Numeral Equivalent: " );//+ thousandsResult + hundredsResult + tensResult + unitsResult);
+       /* System.out.println("Units: " + units);
+        System.out.println("Tens: " + tens);
+        System.out.println("Hundreds: " + hundreds);
+        System.out.println("Thousands: " + thousands);*/
+        System.out.println("Time to calculate: " + captureTime() + " milliseconds");
+    }
+
+    private void checkUserYesNoAnwser(String input) {
         if ("y".equals(input) || "Y".equals(input)) {
             main(null);
-        } else {
-            return;
         }
+
+        if ("n".equals(input) || "N".equals(input)) {
+            System.exit(0);
+        }
+        return;
+
     }
 
     private Integer readAndVerifyUserInput(String input) {
@@ -97,16 +131,15 @@ public class Main {
             Integer inputtedNumber = Integer.parseInt(input);
             if (input.length() < 1 || inputtedNumber >= 6000) {
                 System.out.println("Invalid Number");
-                askUserToStartAgain(userInput("Try another?: Y/N "));
-
+                checkUserYesNoAnwser(userInput("Try another?: Y/N "));
             }
             return inputtedNumber;
         } catch (NumberFormatException e) {
             System.out.println("Invalid Number");
-            askUserToStartAgain(userInput("Try another?: Y/N "));
+            checkUserYesNoAnwser(userInput("Try another?: Y/N "));
         } catch (NullPointerException e) {
             System.out.println("Invalid Number");
-            askUserToStartAgain(userInput("Try another?: Y/N "));
+            checkUserYesNoAnwser(userInput("Try another?: Y/N "));
         }
         return 0;
     }
@@ -150,9 +183,8 @@ public class Main {
         return null;
     }
 
-    private long captureTime(){
+    private long captureTime() {
         timeCapture = System.currentTimeMillis() - timeCapture;
         return timeCapture;
     }
-
 }

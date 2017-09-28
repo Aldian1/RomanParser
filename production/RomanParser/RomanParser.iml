@@ -10,6 +10,12 @@
       <sourceFolder url="file://$MODULE_DIR$/.idea" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/production" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bin/com" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bin/com/harry" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bin/com/harry/romanparser" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/harry" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/com/harry/romanparser" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
