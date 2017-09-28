@@ -17,24 +17,10 @@ import org.json.simple.parser.ParseException;
 
 
 
-class UnitsObject {
-
-    private int units=0;
-    private int tens=0;
-    private int hundreds=0;
-    private int thousands=0;
-
-         public UnitsObject(int a, int b, int c, int d)
-         {
-         units = a;
-         tens = b;
-         hundreds = c;
-         thousands = d;
-         }
-}
-
 public class Main {
 
+    private String JSON_PATH = "assets/reference.json";
+    public Results results;
     long timeCapture = 0L;
 
     // TODO: Better flow management
@@ -44,6 +30,7 @@ public class Main {
 
     public Main() {
         try {
+            results = new Results();
             calculateRomanNumeral(userInput("Enter a number: "));
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -54,8 +41,7 @@ public class Main {
 
         Integer inputtedNumber = readAndVerifyUserInput(input);
         extractNumericalUnits(inputtedNumber);
-        getJSONReferencesAndConvert();
-        printResults();
+        printResults(getJSONReferencesAndConvert());
         checkUserYesNoAnwser(userInput("Try another?: Y/N "));
     }
 
@@ -71,12 +57,12 @@ public class Main {
         }
         if ((inputtedNumber >= 10) & inputtedNumber < 100) {
             tens = ((inputtedNumber - hundreds) / 10) * 10;
-            units = (inputtedNumber - hundreds) - (tens);
+            units = (inputtedNumber - hundreds) - tens;
         }
         if ((inputtedNumber >= 100) & inputtedNumber < 1000) {
             hundreds = (inputtedNumber / 100) * 100;
             tens = ((inputtedNumber - hundreds) / 10) * 10;
-            units = (inputtedNumber - hundreds) - (tens);
+            units = (inputtedNumber - hundreds) - tens;
         }
         if (inputtedNumber >= 1000) {
             thousands = (inputtedNumber / 1000) * 1000;
@@ -85,32 +71,37 @@ public class Main {
             units = ((inputtedNumber - thousands) - hundreds) - tens;
         }
 
+        results.setUnits(units);
+        results.setTens(tens);
+        results.setHundreds(hundreds);
+        results.setThousands(thousands);
 
     }
 
-    private void getJSONReferencesAndConvert() {
-        int units = 0;
-        int tens = 0;
-        int hundreds = 0;
-        int thousands = 0;
-        JSONObject romanNumeralRef = getJsonObject("assets/reference.json");
+    private String getJSONReferencesAndConvert() {
+
+        JSONObject romanNumeralRef = getJsonObject(JSON_PATH);
         JSONArray romanNumeralUnits = (JSONArray) romanNumeralRef.get("Units");
         JSONArray romanNumeralTens = (JSONArray) romanNumeralRef.get("Tens");
         JSONArray romanNumeralHundreds = (JSONArray) romanNumeralRef.get("Hundreds");
         JSONArray romanNumeralThousands = (JSONArray) romanNumeralRef.get("Thousands");
-        String unitsResult = searchJSONArray(units, romanNumeralUnits);
-        String tensResult = searchJSONArray(tens, romanNumeralTens);
-        String hundredsResult = searchJSONArray(hundreds, romanNumeralHundreds);
-        String thousandsResult = searchJSONArray(thousands, romanNumeralThousands);
-        return;
+        String unitsResult = searchJSONArray(results.getUnits(), romanNumeralUnits);
+        String tensResult = searchJSONArray(results.getTens(), romanNumeralTens);
+        String hundredsResult = searchJSONArray(results.getHundreds(), romanNumeralHundreds);
+        String thousandsResult = searchJSONArray(results.getThousands(), romanNumeralThousands);
+        return unitsResult + tensResult + hundredsResult + thousandsResult;
+        // I have all the string results
+        //return the string as one cancenated one?
+
+
     }
 
-    private void printResults() {
-        System.out.println("Roman Numeral Equivalent: " );//+ thousandsResult + hundredsResult + tensResult + unitsResult);
-       /* System.out.println("Units: " + units);
-        System.out.println("Tens: " + tens);
-        System.out.println("Hundreds: " + hundreds);
-        System.out.println("Thousands: " + thousands);*/
+    private void printResults(String romanNumber) {
+        System.out.println("Roman Numeral Equivalent: " + romanNumber );//+ thousandsResult + hundredsResult + tensResult + unitsResult);
+       System.out.println("Units: " + results.getUnits());
+        System.out.println("Tens: " + results.getTens());
+        System.out.println("Hundreds: " + results.getHundreds());
+        System.out.println("Thousands: " + results.getThousands());
         System.out.println("Time to calculate: " + captureTime() + " milliseconds");
     }
 
@@ -187,4 +178,8 @@ public class Main {
         timeCapture = System.currentTimeMillis() - timeCapture;
         return timeCapture;
     }
+
 }
+
+
+
