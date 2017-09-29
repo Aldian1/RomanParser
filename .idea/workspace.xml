@@ -19,27 +19,13 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInput.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/UserInput.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,8 +33,8 @@
       <file leaf-file-name="Extractor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Extractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -57,18 +43,31 @@
       <file leaf-file-name="Printer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONFileReferencer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/JSONFileReferencer.java">
+      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="3135">
+              <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+              <folding>
+                <element signature="e#10065#10066#0" expanded="true" />
+                <element signature="e#10148#10149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RomanNumberFormatter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/RomanNumberFormatter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,14 +75,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Results.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Results.java">
+      <file leaf-file-name="reference.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/reference.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RomanNumber.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/RomanNumber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,6 +112,7 @@
     <findStrings>
       <find>\/\/\n\/\/ Source code recreated from a \.class file by IntelliJ IDEA\n\/\/ \(powered by Fernflower decompiler\)\n\/\/\n\npackage com\.harry\.romanparser\;\n\nimport java\.io\.BufferedReader\;\nimport java\.io\.FileNotFoundException\;\nimport java\.io\.FileReader\;\nimport java\.io\.IOException\;\nimport java\.io\.InputStreamReader\;\nimport org\.json\.simple\.JSONArray\;\nimport org\.json\.simple\.JSONObject\;\nimport org\.json\.simple\.parser\.JSONParser\;\nimport org\.json\.simple\.parser\.ParseException\;\n\npublic class Main \{\n    public Main\(\) \{\n    \}\n\n    public static void main\(String\[\] args\) \{\n        try \{\n            calculateRomanNumeral\(userInput\(\&quot;Enter a number\: \&quot;\)\)\;\n        \} catch \(Exception var2\) \{\n            System\.out\.println\(var2\.getMessage\(\)\)\;\n        \}\n\n    \}\n\n    public static void calculateRomanNumeral\(String input\) \{\n        Integer inputtedNumber \= readAndVerifyUserInput\(input\)\;\n        extractNumericalUnits\(inputtedNumber\)\;\n    \}\n\n    private static void extractNumericalUnits\(Integer inputtedNumber\) \{\n        int units \= 0\;\n        int tens \= 0\;\n        int hundreds \= 0\;\n        int thousands \= 0\;\n        if \(inputtedNumber\.intValue\(\) \&lt; 10\) \{\n            units \= inputtedNumber\.intValue\(\)\;\n        \}\n\n        if \(inputtedNumber\.intValue\(\) \&gt;\= 10 \&amp; inputtedNumber\.intValue\(\) \&lt; 100\) \{\n            tens \= \(inputtedNumber\.intValue\(\) \- hundreds\) \/ 10 \* 10\;\n            units \= inputtedNumber\.intValue\(\) \- hundreds \- tens\;\n        \}\n\n        if \(inputtedNumber\.intValue\(\) \&gt;\= 100 \&amp; inputtedNumber\.intValue\(\) \&lt; 1000\) \{\n            hundreds \= inputtedNumber\.intValue\(\) \/ 100 \* 100\;\n            tens \= \(inputtedNumber\.intValue\(\) \- hundreds\) \/ 10 \* 10\;\n            units \= inputtedNumber\.intValue\(\) \- hundreds \- tens\;\n        \}\n\n        if \(inputtedNumber\.intValue\(\) \&gt;\= 1000\) \{\n            thousands \= inputtedNumber\.intValue\(\) \/ 1000 \* 1000\;\n            hundreds \= \(inputtedNumber\.intValue\(\) \- thousands\) \/ 100 \* 100\;\n            tens \= \(inputtedNumber\.intValue\(\) \- thousands \- hundreds\) \/ 10 \* 10\;\n            units \= inputtedNumber\.intValue\(\) \- thousands \- hundreds \- tens\;\n        \}\n\n        printResults\(units\, tens\, hundreds\, thousands\)\;\n    \}\n\n    private static void printResults\(Integer units\, Integer tens\, Integer hundreds\, Integer thousands\) \{\n        JSONObject romanNumeralRef \= getJsonObject\(\&quot;assets\/reference\.json\&quot;\)\;\n        JSONArray romanNumeralUnits \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Units\&quot;\)\;\n        JSONArray romanNumeralTens \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Tens\&quot;\)\;\n        JSONArray romanNumeralHundreds \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Hundreds\&quot;\)\;\n        JSONArray romanNumeralThousands \= \(JSONArray\)romanNumeralRef\.get\(\&quot;Thousands\&quot;\)\;\n        String unitsResult \= searchJSONArray\(units\, romanNumeralUnits\)\;\n        String tensResult \= searchJSONArray\(tens\, romanNumeralTens\)\;\n        String hundredsResult \= searchJSONArray\(hundreds\, romanNumeralHundreds\)\;\n        String thousandsResult \= searchJSONArray\(thousands\, romanNumeralThousands\)\;\n        System\.out\.println\(\&quot;Roman Numeral Equivalent\: \&quot; \+ thousandsResult \+ hundredsResult \+ tensResult \+ unitsResult\)\;\n        System\.out\.println\(\&quot;Units\: \&quot; \+ units\)\;\n        System\.out\.println\(\&quot;Tens\: \&quot; \+ tens\)\;\n        System\.out\.println\(\&quot;Hundreds\: \&quot; \+ hundreds\)\;\n        System\.out\.println\(\&quot;Thousands\: \&quot; \+ thousands\)\;\n        askUserToStartAgain\(userInput\(\&quot;Try another\?\: Y\/N \&quot;\)\)\;\n    \}\n\n    private static void askUserToStartAgain\(String input\) \{\n        if \(\&quot;y\&quot;\.equals\(input\) \|\| \&quot;Y\&quot;\.equals\(input\)\) \{\n            main\(\(String\[\]\)null\)\;\n        \}\n    \}\n\n    private static Integer readAndVerifyUserInput\(String input\) \{\n        try \{\n            Integer inputtedNumber \= Integer\.parseInt\(input\)\;\n            if \(input\.length\(\) \&lt; 1\) \{\n                throw new RuntimeException\(\&quot;Please input a number larger than 0\&quot;\)\;\n            \} else if \(inputtedNumber\.intValue\(\) \&gt;\= 6000\) \{\n                askUserToStartAgain\(userInput\(\&quot;Try another\?\: Y\/N \&quot;\)\)\;\n                throw new RuntimeException\(\&quot;No known conversion for numbers greater than 6000\&quot;\)\;\n            \} else \{\n                return inputtedNumber\;\n            \}\n        \} catch \(NumberFormatException var2\) \{\n            throw new RuntimeException\(\&quot;Please enter a valid number\&quot;\)\;\n        \} catch \(NullPointerException var3\) \{\n            throw new RuntimeException\(\&quot;Please enter a valid number\&quot;\)\;\n        \}\n    \}\n\n    public static String userInput\(String instructions\) \{\n        System\.out\.println\(instructions\)\;\n        BufferedReader bufferedReader \= new BufferedReader\(new InputStreamReader\(System\.in\)\)\;\n        String input \= null\;\n\n        try \{\n            input \= bufferedReader\.readLine\(\)\;\n        \} catch \(IOException var4\) \{\n            var4\.printStackTrace\(\)\;\n        \}\n\n        return input\;\n    \}\n\n    public static String searchJSONArray\(Integer key\, JSONArray arrayToSearch\) \{\n        for\(int i \= 0\; i \&lt; arrayToSearch\.size\(\)\; \+\+i\) \{\n            JSONObject item \= \(JSONObject\)arrayToSearch\.get\(i\)\;\n            Integer convertedResult \= Integer\.parseInt\(\(String\)item\.get\(\&quot;key\&quot;\)\)\;\n            if \(key\.equals\(convertedResult\)\) \{\n                return \(String\)item\.get\(\&quot;val\&quot;\)\;\n            \}\n        \}\n\n        return \&quot;\=\=\=\=\=\= Cannot find key \[\&quot; \+ key \+ \&quot;\] in \&quot; \+ arrayToSearch \+ \&quot; \=\=\=\=\=\=  \&quot;\;\n    \}\n\n    public static JSONObject getJsonObject\(String path\) \{\n        JSONParser parser \= new JSONParser\(\)\;\n\n        try \{\n            Object obj \= \(JSONObject\)parser\.parse\(new FileReader\(path\)\)\;\n            JSONObject jsonObject \= \(JSONObject\)obj\;\n            return jsonObject\;\n        \} catch \(FileNotFoundException var4\) \{\n            var4\.printStackTrace\(\)\;\n        \} catch \(IOException var5\) \{\n            var5\.printStackTrace\(\)\;\n        \} catch \(ParseException var6\) \{\n            var6\.printStackTrace\(\)\;\n        \}\n\n        return null\;\n    \}\n\}\n</find>
       <find>timeCapture</find>
+      <find>format</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -110,13 +120,16 @@
       <list>
         <option value="$PROJECT_DIR$/bin/com/harry/romanparser/Main.class" />
         <option value="$PROJECT_DIR$/bin/reference.json" />
-        <option value="$PROJECT_DIR$/src/com/harry/romanparser/Results.java" />
         <option value="$PROJECT_DIR$/src/com/harry/romanparser/JSONParser.java" />
         <option value="$PROJECT_DIR$/src/com/harry/romanparser/JSONFileReferencer.java" />
         <option value="$PROJECT_DIR$/src/com/harry/romanparser/ExtractNumericalUnits.java" />
+        <option value="$PROJECT_DIR$/src/com/harry/romanparser/Results.java" />
         <option value="$PROJECT_DIR$/src/com/harry/romanparser/UserInput.java" />
+        <option value="$PROJECT_DIR$/src/com/harry/romanparser/Extractor.java" />
         <option value="$PROJECT_DIR$/src/com/harry/romanparser/Printer.java" />
         <option value="$PROJECT_DIR$/src/com/harry/romanparser/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/harry/romanparser/RomanNumberFormatter.java" />
+        <option value="$PROJECT_DIR$/src/com/harry/romanparser/RomanNumber.java" />
       </list>
     </option>
   </component>
@@ -139,6 +152,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -150,14 +165,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Roman Parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="RomanParser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Roman Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RomanParser" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Roman Parser" type="b2602c69:ProjectViewProjectNode" />
@@ -190,6 +208,10 @@
               <item name="harry" type="462c0819:PsiDirectoryNode" />
               <item name="romanparser" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Roman Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -199,7 +221,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
@@ -299,24 +321,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.084375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20080726" sideWeight="0.32604167" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19576186" sideWeight="0.55625" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19576186" sideWeight="0.44375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19609375" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34461537" sideWeight="0.49453124" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20080726" sideWeight="0.32604167" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19576186" sideWeight="0.44375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16692914" sideWeight="0.496875" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34461537" sideWeight="0.49453124" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -324,19 +346,81 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Results.java" />
     <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Extractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/RomanNumberFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/reference.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/RomanNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding>
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/RomanNumber.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -400,59 +484,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/JSONFileReferencer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Extractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="40" column="37" lean-forward="false" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3135">
+          <caret line="234" column="18" lean-forward="false" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Results.java">
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/reference.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/RomanNumberFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/UserInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Extractor.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="157">
+          <caret line="2862" column="29" lean-forward="false" selection-start-line="2862" selection-start-column="23" selection-end-line="2862" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/harry/romanparser/RomanNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
           </folding>
         </state>
       </provider>

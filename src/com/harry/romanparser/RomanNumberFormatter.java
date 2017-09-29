@@ -9,35 +9,22 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class JSONFileReferencer {
+public class RomanNumberFormatter {
 
 
 
     private String JSON_PATH = "assets/reference.json";
-    public Results storedResults;
+    public RomanNumber storedRomanNumber;
 
 
-    public String getRomanNumeral(Results results)
+    public String format(RomanNumber romanNumber)
     {
-        storedResults = results;
+        storedRomanNumber = romanNumber;
         return getJSONReferencesAndConvert();
     }
 
     private String getJSONReferencesAndConvert() {
-
-        JSONObject romanNumeralRef = getJsonObject(JSON_PATH);
-        if(romanNumeralRef != null) {
-            JSONArray romanNumeralUnits = (JSONArray) romanNumeralRef.get("Units");
-            JSONArray romanNumeralTens = (JSONArray) romanNumeralRef.get("Tens");
-            JSONArray romanNumeralHundreds = (JSONArray) romanNumeralRef.get("Hundreds");
-            JSONArray romanNumeralThousands = (JSONArray) romanNumeralRef.get("Thousands");
-            String unitsResult = searchJSONArray(storedResults.getUnits(), romanNumeralUnits);
-            String tensResult = searchJSONArray(storedResults.getTens(), romanNumeralTens);
-            String hundredsResult = searchJSONArray(storedResults.getHundreds(), romanNumeralHundreds);
-            String thousandsResult = searchJSONArray(storedResults.getThousands(), romanNumeralThousands);
-            return unitsResult + tensResult + hundredsResult + thousandsResult;
-            //TODO: return the string as one cancenated one
-        }
+        //TODO
         return "Cannot find JSON file";
     }
 

@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//scannning input and printing out...
 public class UserInput {
 
-
-
+    //printing and scanning
     public String presentInputWithInstructions(String instructions) {
         System.out.println(instructions);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -19,7 +19,8 @@ public class UserInput {
         }
         return input;
     }
-
+    //Dont return param with int when you can break it into two
+    //split this function
     public Integer readAndVerifyUserInput(String input) {
         try {
             Integer inputtedNumber = Integer.parseInt(input);
