@@ -1,0 +1,12 @@
+
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+
+repositories {
+   mavenCentral()
+}
+dependencies {
+   // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+   compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+}
